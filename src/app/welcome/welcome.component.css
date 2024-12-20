@@ -1,0 +1,75 @@
+/* Center the content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    background-color: #f9f9f9; 
+    margin-top: -220px;/* Optional: light background */
+  }
+  
+  /* Heading styling */
+  h1, h2 {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table styling */
+  .meeting-table {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .meeting-table th,
+  .meeting-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .meeting-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .meeting-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .meeting-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .meeting-table td {
+    text-align: center; /* Aligning the content to the center */
+  }
+  
+  /* Message when no meetings are scheduled */
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  

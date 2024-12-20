@@ -1,0 +1,46 @@
+<div class="form-container">
+  <h1>Schedule Meeting</h1>
+  <form (ngSubmit)="scheduleMeeting()">
+    <label>
+      Meeting Topic:
+      <input
+        type="text"
+        [(ngModel)]="meeting.topic"
+        name="topic"
+        required
+      />
+    </label>
+    <br />
+    <label>
+      Meeting People:
+      <input
+        type="text"
+        [(ngModel)]="meeting.people"
+        name="people"
+        required
+      />
+    </label>
+    <br />
+    <label>
+      Meeting Date:
+      <input
+        type="date"
+        [(ngModel)]="meeting.date"
+        name="date"
+        required
+      />
+    </label>
+    <br />
+    <label>
+      Meeting Time:
+      <input
+        type="time"
+        [(ngModel)]="meeting.time"
+        name="time"
+        required
+      />
+    </label>
+    <br />
+    <button type="submit">Submit</button>
+  </form>
+</div>

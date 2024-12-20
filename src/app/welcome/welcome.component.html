@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Please schedule your meeting by clicking the schedule button</h1>
+  <button (click)="goToSchedule()">Schedule Meeting</button>
+
+  <h2>Scheduled Meetings</h2>
+  
+  <!-- Meeting list displayed in a table -->
+  <table class="meeting-table" *ngIf="meetings.length > 0">
+    <thead>
+      <tr>
+        <th>Meeting Topic</th>
+        <th>Meeting People</th>
+        <th>Meeting Date</th>
+        <th>Meeting Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let meeting of meetings">
+        <td>{{ meeting.topic }}</td>
+        <td>{{ meeting.people }}</td>
+        <td>{{ meeting.date | date: 'shortDate' }}</td> <!-- Using Angular's DatePipe -->
+        <td>{{ meeting.time }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Message if there are no meetings scheduled -->
+  <p *ngIf="meetings.length === 0">No meetings scheduled yet.</p>
+</div>
